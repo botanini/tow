@@ -1,0 +1,47 @@
+/* This is an ugly stylesheet. */
+body {
+  background-color: #f9ff41;
+  color: #41f9ff;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 10px 5px 15px 20px;
+  padding: 30px;
+  border: 5px solid #ff41f9;
+}
+
+h1 {
+  font-size: 55px;
+  color: #ff4141;
+  border: 5px dotted #6324f6;
+}
+
+h2 {
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+  text-decoration-thickness: 20px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 20px;
+}
+
+ul {
+  font-size: 20px;
+}
+
+li {
+  font-size: 20px;
+}
+
+a {
+  font-size: 25px;
+}
+
+img {
+  border: 5px solid #ff41f9;
+}
+
