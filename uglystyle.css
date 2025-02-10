@@ -6,12 +6,15 @@ body {
   margin: 10px 5px 15px 20px;
   padding: 30px;
   border: 5px solid #ff41f9;
+  background-image: linear-gradient(rgb(0, 255, 98), yellow);
 }
 
 h1 {
   font-size: 55px;
   color: #ff4141;
   border: 5px dotted #6324f6;
+  background-image: linear-gradient(red, yellow);
+  text-shadow: 2px 2px 5px rgb(0, 4, 255);
 }
 
 h2 {
@@ -19,22 +22,27 @@ h2 {
   text-decoration: underline;
   text-decoration-color: #ffffff;
   text-decoration-thickness: 20px;
+  text-shadow: 2px 2px 5px rgb(0, 4, 255);
 }
 
 h3 {
   font-size: 25px;
+  color: tomato;
 }
 
 p {
   font-size: 20px;
+  text-shadow: 2px 2px 5px rgb(0, 4, 255);
 }
 
 ul {
   font-size: 20px;
+  text-shadow: 2px 2px 5px red;
 }
 
 li {
   font-size: 20px;
+  text-shadow: 2px 2px 5px red;
 }
 
 a {
@@ -43,5 +51,23 @@ a {
 
 img {
   border: 5px solid #ff41f9;
+  width: 30%;
+  height: 30%;
 }
 
+th {
+  font-size: 25px;
+  color: #bf50ff;
+  border: solid #ffffff;
+  text-align: left;
+  padding: 15px;
+  text-shadow: 2px 2px 5px red;
+}
+td {
+  font-size: 20px;
+  color: #21ff2c;
+  border: solid #6324f6;
+  text-align: left;
+  padding: 15px;
+  text-shadow: 2px 2px 5px red;
+}
