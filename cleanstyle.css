@@ -1,0 +1,142 @@
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 25px;
+  color: #2a2a2a;
+  background: #a6e1ff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  line-height: 150%;
+}
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: left;
+}
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+}
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: #1265f3;
+}
+
+img {
+  display: block;
+  width: 30%;
+  height: 30%;
+  border-radius: 25px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  background-color: aliceblue;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+a.back-to-top {
+  display: block;
+  margin: 20px 0;
+  text-align: right;
+  font-size: 14px;
+  color: #2a2a2a;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a.back-to-top:hover {
+  text-decoration: underline;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.carousel {
+  display: flex;
+  animation: slide 20s infinite;
+}
+
+.carousel img {
+  width: 50%;
+  height: auto;
+  flex: 0 0 50%;
+  transition: transform 1s ease;
+  border-radius: 25px;
+}
+
+.wrapper {
+  background: #92ceff;
+  width: 972px; /* give the element a fixed width */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 40px;
+  border: 5px solid;
+  border-image: linear-gradient(#1265f3, #def4ff) 3; /* Apply gradient border */
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
