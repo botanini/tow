@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 25px;
   color: #2a2a2a;
-  background: #1d73adb7;
+  background: #1d73ad5c;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
   line-height: 150%;
@@ -42,7 +42,8 @@ a.back-to-top:hover {
 
 /* Headers */
 h1 {
-  font-size: 55px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
   font-weight: bold;
   text-align: left;
   text-transform: capitalize;
@@ -51,10 +52,11 @@ h1 {
 h2 {
   font-size: 35px;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
+  padding-top: 10px;
   text-transform: uppercase;
   text-decoration: underline;
-  color: #1258d1;
+  color: #2e3138;
 }
 
 h3 {
@@ -133,7 +135,7 @@ tr:hover {
 
 /* Wrapper */
 .wrapper {
-  background: #92ceff;
+  background-color: #ecf3ff68;
   width: 972px;
   margin-left: auto;
   margin-right: auto;
@@ -153,10 +155,10 @@ tr:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
-  background-color: #92ceff;
+  padding: 15px;
+  background-color: #f8fcffaa;
   color: white;
-  border-bottom: 4px solid #1258d1;
+  border-style: dashed;
 }
 
 .site-logo img {
@@ -170,8 +172,9 @@ tr:hover {
 }
 
 .sitenav a {
-  color: #1258d1;
+  color: #194694;
   text-decoration: none;
+  font-size: 80%;
   font-weight: bold;
   padding: 8px 15px;
   border-radius: 5px;
@@ -180,7 +183,9 @@ tr:hover {
 }
 
 .sitenav a:hover {
-  background: #d9e6fc;
+  background: #7c9fda;
+  color: #d1e2ff;
+  transition-duration: 0.5;
 }
 
 /* Page Header */
@@ -188,14 +193,16 @@ tr:hover {
   text-align: center;
   padding: 20px;
   background-color: #f8f8f86c;
-  border-bottom: 3px solid #1258d1;
+  border-style: dashed;
+  border-color: #ffffff;
 }
 
 .page-header h1 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: bold;
   color: #000b30;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .page-header nav {
@@ -203,7 +210,8 @@ tr:hover {
 }
 
 .page-header nav a {
-  color: #1258d1;
+  color: #8692a7;
+  font-size: 80%;
   text-decoration: none;
   font-weight: bold;
   margin: 0 12px;
