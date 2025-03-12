@@ -9,9 +9,10 @@ body {
 }
 
 a {
-  color: rgb(70, 84, 196);
+  color: rgb(105, 118, 215);
   text-decoration: underline;
   transition: color 0.3s ease-in-out;
+  font-weight: bold;
 }
 
 a:visited {
@@ -40,6 +41,19 @@ a.back-to-top:hover {
   text-decoration: underline;
 }
 
+a.back {
+  display: block;
+  margin: 20px 0;
+  text-align: right;
+  font-size: 14px;
+  color: #2a2a2a;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a.back:hover {
+  text-decoration: underline;
+}
 /* Headers */
 h1 {
   font-family: Arial, Helvetica, sans-serif;
