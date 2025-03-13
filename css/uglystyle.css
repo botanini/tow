@@ -1,0 +1,160 @@
+/* This is an ugly stylesheet with color animation */
+@keyframes colorChange {
+  0% {
+    color: #ff4141;
+  }
+  25% {
+    color: #41f9ff;
+  }
+  50% {
+    color: #ff41f9;
+  }
+  75% {
+    color: #21ff2c;
+  }
+  100% {
+    color: #ff4141;
+  }
+}
+
+@keyframes bgColorChange {
+  0% {
+    background-color: #f9ff41;
+  }
+  25% {
+    background-color: #ff41f9;
+  }
+  50% {
+    background-color: #41f9ff;
+  }
+  75% {
+    background-color: #21ff2c;
+  }
+  100% {
+    background-color: #f9ff41;
+  }
+}
+@keyframes moveNav {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes growShrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+nav {
+  background-color: #f9ff41;
+  color: #41f9ff;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 10px 5px 15px 20px;
+  padding: 30px;
+  border: 5px solid #ff41f9;
+  animation: bgColorChange 5s infinite linear, moveNav 5s infinite linear;
+}
+body {
+  background-color: #f9ff41;
+  color: #41f9ff;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 10px 5px 15px 20px;
+  padding: 30px;
+  border: 5px solid #ff41f9;
+  animation: bgColorChange 5s infinite linear;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+th,
+td,
+a {
+  animation: colorChange 3s infinite alternate;
+}
+
+h1 {
+  font-size: 55px;
+  border: 5px dotted #6324f6;
+  background-image: linear-gradient(red, yellow);
+  text-shadow: 2px 2px 5px rgb(0, 4, 255);
+  animation: spin 5s infinite linear;
+}
+
+h2 {
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+  text-decoration-thickness: 20px;
+  text-shadow: 2px 2px 5px rgb(0, 4, 255);
+  animation: spin 5s infinite linear;
+}
+
+h3 {
+  font-size: 25px;
+  color: tomato;
+}
+
+p {
+  font-size: 20px;
+  text-shadow: 2px 2px 5px rgb(0, 4, 255);
+}
+
+ul,
+li {
+  font-size: 20px;
+  text-shadow: 2px 2px 5px red;
+  animation: growShrink 5s infinite ease-in-out;
+  text-align: center;
+}
+
+a {
+  font-size: 25px;
+}
+
+img {
+  border: 5px solid #ff41f9;
+  width: 30%;
+  height: 30%;
+  animation: growShrink 5s infinite ease-in-out;
+}
+
+th {
+  font-size: 25px;
+  border: solid #ffffff;
+  text-align: left;
+  padding: 15px;
+  text-shadow: 2px 2px 5px red;
+}
+
+td {
+  font-size: 20px;
+  border: solid #6324f6;
+  text-align: left;
+  padding: 15px;
+  text-shadow: 2px 2px 5px red;
+}

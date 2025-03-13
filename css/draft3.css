@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  padding: 25px;
+  color: #2a2a2a;
+  background: #1d73ad5c;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+a {
+  color: rgb(70, 84, 196);
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out;
+}
+
+a:visited {
+  color: rgb(0, 34, 128);
+}
+
+a:hover {
+  color: rgb(195, 105, 255);
+}
+
+a:active {
+  color: rgb(0, 247, 255);
+}
+
+a.back-to-top {
+  display: block;
+  margin: 20px 0;
+  text-align: right;
+  font-size: 14px;
+  color: #2a2a2a;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a.back-to-top:hover {
+  text-decoration: underline;
+}
+
+/* Headers */
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 10px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #2e3138;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: #194694;
+  text-transform: uppercase;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+/* Images */
+img {
+  width: 300px;
+  display: block;
+  height: auto;
+  border-radius: 25px;
+}
+/* gallery grid CSS */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 20px;
+  justify-items: center;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.gallery-item {
+  width: 300px; /*should match the width of your images + width of border (if any) */
+  text-align: center;
+  border-radius: 25px;
+  padding: 10px;
+}
+.gallery-item:hover {
+  background-color: #f1f1f199;
+  border-radius: 25px;
+  padding: 10px;
+  box-shadow: 5px 5px 5px #5148ad85;
+  transition: 0.35s;
+}
+
+/* css for styling the p/caption under the image */
+.gallery-item p {
+  font-size: 15px;
+  margin: 0.25em 0;
+  line-height: 135%;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  background-color: aliceblue;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Wrapper */
+.wrapper {
+  background-color: #ecf3ff68;
+  width: 972px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 40px;
+}
+
+/* Center */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Site Header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f8fcffaa;
+  color: white;
+  border-style: dashed;
+}
+
+.site-logo img {
+  height: 100px;
+  border-radius: 5px;
+}
+
+.sitenav {
+  display: flex;
+  gap: 15px;
+}
+
+.sitenav a {
+  color: #194694;
+  text-decoration: none;
+  font-size: 80%;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+.sitenav a:hover {
+  background: #7c9fda;
+  color: #d1e2ff;
+  transition-duration: 0.5;
+}
+
+/* Page Header */
+.page-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f86c;
+  border-style: dashed;
+  border-color: #ffffff;
+}
+
+.page-header h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #000b30;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.page-header nav {
+  margin-top: 10px;
+}
+
+.page-header nav a {
+  color: #8692a7;
+  font-size: 80%;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 12px;
+  transition: color 0.3s ease-in-out;
+}
+
+.page-header nav a:hover {
+  color: #2a2a2a;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sitenav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .wrapper {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .page-header h1 {
+    font-size: 30px;
+  }
+}
